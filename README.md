@@ -48,6 +48,7 @@ We devide above dialogues into 9 splits to facilitate the download:
 This version of MMChat contains the dialogues that are filtered based on the [LCCC](https://github.com/thu-coai/CDial-GPT) (Large-scale Cleaned Chinese Conversation) dataset.
 Specifically, some dialogues in MMChat are also contained in LCCC. 
 We regard these dialogues as cleaner dialogues since sophisticated schemes are designed in LCCC to filter out noises.
+This version of MMChat is obtained using the script `data_processing/LCCC_filter.py`
 The following table shows some basic statistics:
 
 | Item Description                     | Count   |
