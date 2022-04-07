@@ -1,0 +1,63 @@
+{
+  "comment": "below is the data preprocessing parameters",
+  "max_context_len": 60,
+  "max_resp_len": 60,
+  "max_cap_len": 60,
+  "max_label_len": 60,
+
+  "comment": "below is the decoding parameters",
+  "max_decode_len": 60,
+  "beam_size": 4,
+  "diversity_coef": 0,
+  "diversity_groups": 2,
+  "sample": false,
+  "annealing_topk": 20,
+  "temperature": 0.8,
+  "annealing": 0.9,
+  "length_penalty": 2.2,
+
+  "top_k": 20,
+  "top_p": 0.8,
+
+  "comment": "below is the model parameters",
+  "n_layers": 12,
+  "n_pos_embeddings": 512,
+  "embeddings_size": 768,
+  "n_heads": 12,
+  "dropout": 0.1,
+  "embed_dropout": 0.1,
+  "attn_dropout": 0.1,
+  "ff_dropout": 0.1,
+
+  "comment": "below is the training parameters",
+  "n_epochs": 90,
+  "batch_size": 40,
+  "batch_split": 3,
+  "eval_steps": 600,
+  "lr": 0.1,
+  "lr_warmup": 2000,
+  "lm_weight": 0.02,
+  "img_feat_weight": 0.1,
+  "n_jobs": 12,
+  "label_smoothing": 0.1,
+  "clip_grad": 1.0,
+  "seed": 42,
+  "img_feat_num": 50,
+  "eval_batch_size": 200,
+
+  "train_dir": "train",
+  "eval_dir": "eval",
+  "log_dir": "log",
+  "best_dir": "best",
+  "train_dialog_data":    "data/dialog_train.json",
+  "train_img_index_data": "data/weibo_img_index_train.json",
+  "valid_dialog_data":    "data/dialog_dev.json",
+  "valid_img_index_data": "data/weibo_img_index_dev.json",
+  "test_data": "toy_test.txt",
+
+  "cgpt_parameters_dir": "chinese_gpt_original/Cgpt_model.bin",
+  "vocab_path":          "chinese_gpt_original/dict.txt",
+
+  "img_feat_dir":        "weibo_img/image_feature_lmdb"
+}
+

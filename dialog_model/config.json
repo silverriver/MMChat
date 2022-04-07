@@ -1,0 +1,55 @@
+{
+  "comment": "below is the data preprocessing parameters",
+  "max_context_len": 60,
+  "max_resp_len": 60,
+
+  "comment": "below is the decoding parameters",
+  "max_decode_len": 60,
+  "beam_size": 4,
+  "diversity_coef": 0,
+  "diversity_groups": 2,
+  "sample": false,
+  "annealing_topk": 20,
+  "temperature": 0.8,
+  "annealing": 0.9,
+  "length_penalty": 2.2,
+
+  "top_k": 20,
+  "top_p": 0.8,
+
+  "comment": "below is the model parameters",
+  "n_layers": 12,
+  "n_pos_embeddings": 512,
+  "embeddings_size": 768,
+  "n_heads": 12,
+  "dropout": 0.1,
+  "embed_dropout": 0.1,
+  "attn_dropout": 0.1,
+  "ff_dropout": 0.1,
+
+  "comment": "below is the training parameters",
+  "n_epochs": 90,
+  "batch_size": 40,
+  "batch_split": 3,
+  "eval_steps": 400,
+  "lr": 0.1,
+  "lr_warmup": 2000,
+  "lm_weight": 0.02,
+  "n_jobs": 2,
+  "label_smoothing": 0.1,
+  "clip_grad": 1.0,
+  "seed": 42,
+  "eval_batch_size": 300,
+
+  "train_dir": "train",
+  "eval_dir": "eval",
+  "log_dir": "log",
+  "best_dir": "best",
+  "train_data": "data/dialog_train.json",
+  "valid_data": "data/dialog_dev.json",
+  "test_data": "toy_test.txt",
+
+  "cgpt_parameters_dir": "chinese_gpt_original/Cgpt_model.bin",
+  "vocab_path":          "chinese_gpt_original/dict.txt"
+}
+
