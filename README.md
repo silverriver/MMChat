@@ -11,7 +11,7 @@ We design various strategies to ensure the quality of the dialogues in MMChat. P
 The images in the dataset are hosted on Weibo's static image server. 
 You can refer to the scripts provided in `data_processing/weibo_image_crawler` to download these images.
 
-A sample dialogue form MMChat is given below (translated from Chinese):
+Two sample dialogues form MMChat are given below (translated from Chinese):
 ![A sample dialogue from MMChat](/bin/sample.jpg)
 
 MMChat is released in different versions:
