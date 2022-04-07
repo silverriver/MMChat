@@ -4,23 +4,23 @@ This repo contains the code and data for the LREC2022 paper `MMChat: Multi-Modal
 
 ## Data
 
-MMchat is a large-scale dialogue dataset that contains image-grounded dialogues in Chinese.
-Each dialogue in MMChat associates with one or more images (maximum 9 images per dialogue).
-We design various stratgies to ensure the quality of the dialogues in MMChat. Please read our paper for more details.
-The images in the dataset are hosted on Weibo's stastic image server. 
+MMChat is a large-scale dialogue dataset that contains image-grounded dialogues in Chinese.
+Each dialogue in MMChat is associated with one or more images (maximum 9 images per dialogue).
+We design various strategies to ensure the quality of the dialogues in MMChat. Please read our paper for more details.
+The images in the dataset are hosted on Weibo's static image server. 
 You can refer to the scripts provided in `data_processing/weibo_image_crawler` to download these images.
 
-We given a dialogue sample form MMChat below:
+A sample dialogue form MMChat is given below (translated from Chinese):
 ![A sample dialogue from MMChat](/bin/sample.jpg)
 
-The dialogues in MMChat are released with different versions:
+MMChat is released in different versions:
 
 ### Rule Filtered Raw MMChat
 
-This version of MMChat contains the raw dialogues that are filtered by our rules.
-The following table shows some basic stastic:
+This version of MMChat contains raw dialogues filtered by our rules.
+The following table shows some basic statistics:
 
-| Item Discription                     | Count    |
+| Item Description                     | Count    |
 |--------------------------------------|---------:|
 | Sessions                             | 4.257 M  |
 | Sessions with more than 4 utterances | 2.304 M  |
@@ -31,6 +31,7 @@ The following table shows some basic stastic:
 | Avg. character per utterance         | 14.104   |
 
 We devide above dialogues into 9 splits to facilitate the download:
+
 0. Split0 [Google Drive](https://drive.google.com/file/d/1irGoKFDqorFNwZtySrA1-g12dl61pG-7/view?usp=sharing), [Baidu Netdisk](https://pan.baidu.com/s/1JJ627hzIDG1c4gxbZQcbRg?pwd=mviv)
 1. Split1 [Google Drive](https://drive.google.com/file/d/1OkpF7MAtntn2czuZfujSRc_7rALJ6VRJ/view?usp=sharing), [Baidu Netdisk](https://pan.baidu.com/s/1iupSNrqUd4pQVESOFqNmyw?pwd=ocqr)
 2. Split2 [Google Drive](https://drive.google.com/file/d/1pv_NsPNdQrBSve3h9eVRH1MjeBH8w1AF/view?usp=sharing), [Baidu Netdisk](https://pan.baidu.com/s/1iX10kUf1at1sCUU83b8SmA?pwd=4f88)
@@ -46,9 +47,9 @@ We devide above dialogues into 9 splits to facilitate the download:
 This version of MMChat contains the dialogues that are filtered based on the [LCCC](https://github.com/thu-coai/CDial-GPT) (Large-scale Cleaned Chinese Conversation) dataset.
 Specifically, some dialogues in MMChat are also contained in LCCC. 
 We regard these dialogues as cleaner dialogues since sophisticated schemes are designed in LCCC to filter out noises.
-The following table shows some basic stastic:
+The following table shows some basic statistics:
 
-| Item Discription                     | Count   |
+| Item Description                     | Count   |
 |--------------------------------------|--------:|
 | Sessions                             | 492.6 K |
 | Sessions with more than 4 utterances | 208.8 K |
@@ -59,6 +60,7 @@ The following table shows some basic stastic:
 | Avg. character per utterance         | 11.336  |
 
 We devide above dialogues into 9 splits to facilitate the download:
+
 0. Split0 [Google Drive](https://drive.google.com/file/d/1Qd3N00ZpVOGDBqwlHcpj_QgbSIYNnysx/view?usp=sharing), [Baidu Netdisk](https://pan.baidu.com/s/17g0UBF8zT3w5hfzvpYerQA?pwd=b2an)
 1. Split1 [Google Drive](https://drive.google.com/file/d/1H15T_aSLNaLZdc86WsUU6-c0J37OoZW-/view?usp=sharing), [Baidu Netdisk](https://pan.baidu.com/s/1xj_RIE60Be-sisdkrWt0fQ?pwd=6z1x)
 2. Split2 [Google Drive](https://drive.google.com/file/d/1dCXlyQGwx5tfRFLnsDp0B5LhdHr_Rsbi/view?usp=sharing), [Baidu Netdisk](https://pan.baidu.com/s/1_0WFHqK1ZY92yC4BEqRSwQ?pwd=35cw)
@@ -71,11 +73,11 @@ We devide above dialogues into 9 splits to facilitate the download:
 
 ### MMChat
 
-The MMChat dataset reported in our paper.
+The MMChat dataset reported in our paper are given here.
 The Weibo content corresponding to these dialogues are all "分享图片", (i.e., "Share Images" in English).
-The following table shows some basic stastic:
+The following table shows some basic statistics:
 
-| Item Discription                     | Count   |
+| Item Description                     | Count   |
 |--------------------------------------|--------:|
 | Sessions                             | 120.84 K |
 | Sessions with more than 4 utterances |  17.32 K |
@@ -90,9 +92,9 @@ The above dialogues can be downloaded from either [Google Drive](https://drive.g
 ### MMChat-hf
 
 We perform human annotation on the sampled dialogues to determine whether the given images are related to the corresponding dialogues.
-The following table only shows the stastic for dialogues that are annotated as image-related.
+The following table only shows the statistics for dialogues that are annotated as image-related.
 
-| Item Discription                     | Count   |
+| Item Description                     | Count   |
 |--------------------------------------|--------:|
 | Sessions                             | 19.90 K |
 | Sessions with more than 4 utterances | 8.91 K |
@@ -107,10 +109,13 @@ All the annotated dialogues can be downloaded from either [Google Drive](https:/
 
 ## Code 
 
-We also release all the codes used for our experiments.
+We are also releasing all the codes used for our experiments.
 You can use the script `run_training.sh` in each folder to launch the distributed training.
 
 For models that require image features, you can extract the image features using the scripts in `data_processing/extract_image_features`
+
+The model shown in our paper can be found in `dialog_image`:
+![Model](/bin/model.jpg)
 
 ## Reference
 Please cite our paper if you find our work useful ;)
