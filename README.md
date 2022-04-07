@@ -1,8 +1,9 @@
 # MMChat
 
-This repo contains the code and data for the LREC2022 paper `MMChat: Multi-Modal Chat Dataset on Social Media`.
+This repo contains the code and data for the LREC2022 paper 
+**MMChat: Multi-Modal Chat Dataset on Social Media**.
 
-## Data
+## Dataset
 
 MMChat is a large-scale dialogue dataset that contains image-grounded dialogues in Chinese.
 Each dialogue in MMChat is associated with one or more images (maximum 9 images per dialogue).
