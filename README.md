@@ -11,7 +11,7 @@ The images in the dataset are hosted on Weibo's stastic image server.
 You can refer to the scripts provided in `data_processing/weibo_image_crawler` to download these images.
 
 We given a dialogue sample form MMChat below:
-
+![A sample dialogue from MMChat](/bin/sample.jpg)
 
 The dialogues in MMChat are released with different versions:
 
