@@ -1,7 +1,7 @@
 # MMChat
 
 This repo contains the code and data for the LREC2022 paper 
-**MMChat: Multi-Modal Chat Dataset on Social Media**.
+**[MMChat: Multi-Modal Chat Dataset on Social Media](https://arxiv.org/abs/2108.07154)**.
 
 ## Dataset
 
