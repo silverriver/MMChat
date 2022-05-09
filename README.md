@@ -16,8 +16,46 @@ Two sample dialogues form MMChat are given below (translated from Chinese):
 
 MMChat is released in different versions:
 
+### MMChat
+
+The MMChat dataset reported in our paper are given here.
+The Weibo content corresponding to these dialogues are all "分享图片", (i.e., "Share Images" in English).
+The following table shows some basic statistics:
+
+| Item Description                     | Count   |
+|--------------------------------------|--------:|
+| Sessions                             | 120.84 K |
+| Sessions with more than 4 utterances |  17.32 K |
+| Utterances                           | 314.13 K |
+| Images                               |  198.82 K |
+| Avg. utterance per session           |  2.599 |
+| Avg. image per session               |  2.791 |
+| Avg. character per utterance         |  8.521 |
+
+The above dialogues can be downloaded from either [Google Drive](https://drive.google.com/drive/folders/1sBzuJzOpPEj6-IoXl3drvfqQ8i1_tluX?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1m9nwZejujNUIcVUiIKcxPg?pwd=nrqr).
+
+### MMChat-hf
+
+We perform human annotation on the sampled dialogues to determine whether the given images are related to the corresponding dialogues.
+The following table only shows the statistics for dialogues that are annotated as image-related.
+
+| Item Description                     | Count   |
+|--------------------------------------|--------:|
+| Sessions                             | 19.90 K |
+| Sessions with more than 4 utterances | 8.91 K |
+| Utterances                           | 81.06 K |
+| Images                               | 52.66K |
+| Avg. utterance per session           | 4.07 |
+| Avg. image per session               | 2.70 |
+| Avg. character per utterance         | 11.93 |
+
+We annotated about 100K dialogues.
+All the annotated dialogues can be downloaded from either [Google Drive](https://drive.google.com/drive/folders/1dGg4Coc4bwH7tk7SWn0quTwMYxn-kX70?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/11l-bYAKoLkm4k7zDPrfZvg?pwd=zfw2).
+
+
 ### Rule Filtered Raw MMChat
 
+We are also releasing the raw dialogues we collected to faciliate further research.
 This version of MMChat contains raw dialogues filtered by our rules.
 The following table shows some basic statistics:
 
@@ -72,42 +110,6 @@ We devide above dialogues into 9 splits to facilitate the download:
 6. Split6 [Google Drive](https://drive.google.com/file/d/1qi99_TFwJanuGgAWDBRgi6hqNUQB9JQd/view?usp=sharing), [Baidu Netdisk](https://pan.baidu.com/s/1hfBchNqVhOYjFk9fTT_gxA?pwd=dzh3)
 7. Split7 [Google Drive](https://drive.google.com/file/d/15QMZhGuW93fzAVRhBKb6ANiZ8BNw5lX9/view?usp=sharing), [Baidu Netdisk](https://pan.baidu.com/s/1amg65X0ST7gW8c8MCutXWQ?pwd=2t1j)
 8. Split8 [Google Drive](https://drive.google.com/file/d/1wRCiJfxNk5n5SYzMBm4HYM1BKyGtuGak/view?usp=sharing), [Baidu Netdisk](https://pan.baidu.com/s/1-KYwR-SOezyn5jFzrA3Fxw?pwd=0pyi)
-
-### MMChat
-
-The MMChat dataset reported in our paper are given here.
-The Weibo content corresponding to these dialogues are all "分享图片", (i.e., "Share Images" in English).
-The following table shows some basic statistics:
-
-| Item Description                     | Count   |
-|--------------------------------------|--------:|
-| Sessions                             | 120.84 K |
-| Sessions with more than 4 utterances |  17.32 K |
-| Utterances                           | 314.13 K |
-| Images                               |  198.82 K |
-| Avg. utterance per session           |  2.599 |
-| Avg. image per session               |  2.791 |
-| Avg. character per utterance         |  8.521 |
-
-The above dialogues can be downloaded from either [Google Drive](https://drive.google.com/drive/folders/1sBzuJzOpPEj6-IoXl3drvfqQ8i1_tluX?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1m9nwZejujNUIcVUiIKcxPg?pwd=nrqr).
-
-### MMChat-hf
-
-We perform human annotation on the sampled dialogues to determine whether the given images are related to the corresponding dialogues.
-The following table only shows the statistics for dialogues that are annotated as image-related.
-
-| Item Description                     | Count   |
-|--------------------------------------|--------:|
-| Sessions                             | 19.90 K |
-| Sessions with more than 4 utterances | 8.91 K |
-| Utterances                           | 81.06 K |
-| Images                               | 52.66K |
-| Avg. utterance per session           | 4.07 |
-| Avg. image per session               | 2.70 |
-| Avg. character per utterance         | 11.93 |
-
-We annotated about 100K dialogues.
-All the annotated dialogues can be downloaded from either [Google Drive](https://drive.google.com/drive/folders/1dGg4Coc4bwH7tk7SWn0quTwMYxn-kX70?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/11l-bYAKoLkm4k7zDPrfZvg?pwd=zfw2).
 
 ## Code 
 
