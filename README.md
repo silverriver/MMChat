@@ -49,7 +49,7 @@ The following table only shows the statistics for dialogues that are annotated a
 | Avg. image per session               | 2.70 |
 | Avg. character per utterance         | 11.93 |
 
-We annotated about 100K dialogues.
+We annotated about **100K** dialogues.
 All the annotated dialogues can be downloaded from either [Google Drive](https://drive.google.com/drive/folders/1dGg4Coc4bwH7tk7SWn0quTwMYxn-kX70?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/11l-bYAKoLkm4k7zDPrfZvg?pwd=zfw2).
 
 
