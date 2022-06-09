@@ -3,6 +3,20 @@
 This repo contains the code and data for the LREC2022 paper 
 **[MMChat: Multi-Modal Chat Dataset on Social Media](https://arxiv.org/abs/2108.07154)**.
 
+## News
+
+- 2022-06-09: [MMChat](https://huggingface.co/datasets/silver/mmchat) is now available through huggingface's [datasets](https://github.com/huggingface/datasets) lib：
+
+```python
+from datasets import load_dataset
+
+dataset = load_dataset("silver/mmchat")
+# or 
+# dataset = load_dataset("silver/mmchat", "mmchat_hf")
+# dataset = load_dataset("silver/mmchat", "mmchat_raw")
+# dataset = load_dataset("silver/mmchat", "mmchat_lccc_filtered")
+```
+
 ## Dataset
 
 MMChat is a large-scale dialogue dataset that contains image-grounded dialogues in Chinese.
