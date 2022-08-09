@@ -2,7 +2,7 @@
 
 You can use the scripts in this folder to extract features for images using the pre-trained Fast-RCNN feature extractor.
 
-## How you use
+## How to use
 
 Run the scripts following this order: 
 1. `extract_features_1.py`: extract features from images.
