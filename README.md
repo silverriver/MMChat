@@ -135,6 +135,8 @@ For models that require image features, you can extract the image features using
 The model shown in our paper can be found in `dialog_image`:
 ![Model](/bin/model.jpg)
 
+The pre-trained `chinese_gpt_original` model used in our experiments can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1l_jLVcpBnGXpLp7yf3lqiw) with extract code of `nmoc`, or downloaded from [Google Drive](https://drive.google.com/drive/folders/1rwWv7gbWQrxDMCOr5fpqVd0jJQF4NQu0?usp=sharing).
+
 ## Reference
 Please cite our paper if you find our work useful ;)
 
